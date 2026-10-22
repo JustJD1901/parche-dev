@@ -20,7 +20,109 @@
         </nav>
     </header>
     <main id="contenido">
-
+        <h1>Inscripción</h1>
+        <p>La entrada es gratuita y los cupos son limitados.<br>Completa el formulario para reservar el tuyo.<br>Los campos
+            marcados con * son obligatorios.</p>
+        <form action="gracias.html" method="get">
+            <fieldset>
+                <legend>Tus datos</legend>
+                <div>
+                    <label for="nombre">Nombre Completo *</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="correo">Correo electrónico *</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <div>
+                    <label for="celular" title="10 dígitos, empieza por 3">Celular</label>
+                    <input type="tel" id="celular" name="celular" pattern="3[0-9]{9}">
+                </div>
+                <div>
+                    <label for="ciudad">Ciudad</label>
+                    <select name="ciudad" id="ciudad">
+                        <option value="medellín">Medellín</option>
+                        <option value="bello">Bello</option>
+                        <option value="itagüí">Itagüí</option>
+                        <option value="envigado">Envigado</option>
+                        <option value="sabaneta">Sabaneta</option>
+                        <option value="la_estrella">La Estrella</option>
+                        <option value="caldas">Caldas</option>
+                        <option value="copacabana">Copacabana</option>
+                        <option value="girardota">Girardota</option>
+                        <option value="barbosa">Barbosa</option>
+                        <option value="otra">Otra</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>¿En qué momento estás? *</legend>
+                <div>
+                    <label for="empezando">Estoy empezando a programar</label>
+                    <input type="radio" id="empezando" name="momento_actual" value="empezando">
+                </div>
+                <div>
+                    <label for="programo">Ya programo, pero no trabajo en tecnología</label>
+                    <input type="radio" id="programo" name="momento_actual" value="programo">
+                </div>
+                <div>
+                    <label for="trabajo">Trabajo en tecnología</label>
+                    <input type="radio" id="trabajo" name="momento_actual" value="trabajo">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>¿Qué temas te interesan?</legend>
+                <div>
+                    <label for="desarrollo_web">Desarrollo web</label>
+                    <input type="checkbox" id="desarrollo_web" name="desarrollo_web">
+                </div>
+                <div>
+                    <label for="datos_sql">Datos y SQL</label>
+                    <input type="checkbox" id="datos_sql" name="datos_sql">
+                </div>
+                <div>
+                    <label for="accesibilidad">Accesibilidad</label>
+                    <input type="checkbox" id="accesibilidad" name="accesibilidad">
+                </div>
+                <div>
+                    <label for="python">Python</label>
+                    <input type="checkbox" id="python" name="python">
+                </div>
+                <div>
+                    <label for="nube">Despliegue en la nube</label>
+                    <input type="checkbox" id="nube" name="nube">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Agenda</legend>
+                <div>
+                    <label for="inscripcion">Quiero inscribirme al taller “Tu primer bot con Python” (30 cupos, trae tu computador)</label>
+                    <input type="checkbox" id="inscripcion" name="inscripcion">
+                </div>
+                <div>
+                    <label for="talla_camiseta">Talla de camiseta:</label>
+                    <select name="talla_camiseta" id="talla_camiseta">
+                        <option value="xs">XS</option>
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                        <option value="xxl">XXL</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="expectativa">¿Qué esperas aprender en Parche Dev? (máximo 300 caracteres)</label>
+                    <input type="text" id="expectativa" name="expectativa" maxlength="300">
+                </div>
+                <div>
+                    <label for="codigo_conducta">Acepto el <a href="conducta.html">código de conducta</a> del evento *</label>
+                    <input type="checkbox" id="codigo_conducta" name="codigo_conducta" required>
+                </div>
+                <div>
+                    <button type="submit">Reservar mi cupo</button>
+                </div>
+            </fieldset>
+        </form>
     </main>
     <footer>
         <address>
