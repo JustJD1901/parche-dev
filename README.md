@@ -21,9 +21,9 @@ Sitio publicado: https://justjd1901.github.io/parche-dev/
 
 ## Decisiones que tomé
 
-- Los campos del formulario los separé haciendo uso de <div> para evitar hacer uso de la etiqueta <br> y facilitar el control de estilos en CSS.
-- En el apartado de "Lo que vas a encontrar" en la página de inicio, lo listé haciendo uso de <ul> pues las opciones dadas no requieren un orden lógico en la       presentación.
-- Procuré en separar las lineas de texto en varias etiquetas de <p> evitando la etiqueta <br> para no tener problemas con el dieño reponsive y manejar las distancias y espaciados en CSS.
+- Los campos del formulario los separé haciendo uso de <div> para evitar hacer uso de la etiqueta <br> y facilitar el control de estilos en CSS
+- En el apartado de "Lo que vas a encontrar" en la página de inicio, lo listé haciendo uso de <ul> pues las opciones dadas no requieren un orden lógico en la presentación
+- Procuré en separar las lineas de texto en varias etiquetas de <p> evitando la etiqueta <br> para no tener problemas con el dieño reponsive y manejar las distancias y espaciados en CSS
 ### Respuestas a la investigación:
 
 **¿Qué aparece después del `?` en la barra de direcciones?**
